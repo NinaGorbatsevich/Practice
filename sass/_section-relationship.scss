@@ -1,0 +1,22 @@
+.relationship {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+
+}
+
+.wrapper-relationship {
+  display: flex;
+  flex-direction: column;
+  max-width: 720px;
+  margin-right: 240px;
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+}

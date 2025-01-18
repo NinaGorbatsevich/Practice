@@ -1,0 +1,34 @@
+.manufacture {
+  margin-top: 150px;
+}
+
+.manufacture-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 40px;
+  max-width: 480px;
+  height: 593px;
+  border: 1px solid #EBEBF0;
+
+  &:hover {
+    border: 1px solid #5C8EE5;
+  }
+}
+
+.card {
+  margin-left: 50px;
+  margin-right: 90px;
+
+  &__subtitle {
+    &:hover {
+      color: #5C8EE5;
+    }
+  }
+}

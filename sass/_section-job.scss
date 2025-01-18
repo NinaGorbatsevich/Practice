@@ -1,0 +1,44 @@
+.job {
+  margin-top: 150px;
+}
+
+.job-container {
+  display: flex;
+  flex-direction: column;
+
+  &__cards {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.cards-wrapper {
+
+  &__number {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+}
+
+.num {
+  font-size: 48px;
+  color: #5C8EE5;
+  line-height: 58px;
+}
+
+.grey-line {
+  background-color: #EBEBF0;
+  width: 260px;
+  height: 1px;
+}
+
+
+.request {
+  display: flex;
+  align-items: center;
+}
