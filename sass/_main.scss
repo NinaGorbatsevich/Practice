@@ -8,10 +8,11 @@ main {
   flex-direction: column;
   justify-content: space-between;
 
+
   &__title {
     max-width: 1080px;
     font-weight: 600;
-    font-size: 80px;
+    font-size: clamp(60px, 10vw, 80px);
     font-family: 'Bebas Neue';
     line-height: 96px;
     color: #FFFFFF;
@@ -30,19 +31,25 @@ main {
     background-color: #5C8EE5;
     padding: 25px 60px;
     margin-bottom: 100px;
+
+    @media  screen and (max-width: 425px) {
+      max-width: 100%;
+    }
   }
 
   &__advantage {
-    display: flex;
   }
 }
 
 .advantage {
+  height: 25vh;
   padding: 30px 50px;
   border: 0.5px #EBEBF033 solid;
+  
 
   &__text {
     color: #FFFFFF;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 }

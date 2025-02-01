@@ -10,6 +10,11 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1440px;
+
+  @media  screen and (max-width: 1400px) {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 }
 
 .title {

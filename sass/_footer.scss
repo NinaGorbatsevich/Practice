@@ -6,8 +6,6 @@
   font-weight: 400;
   line-height: 26px;
 
-
-
   &__logo {
     margin-right: 160px;
   }
@@ -17,18 +15,25 @@
   }
 
   &__adress {
-    margin-right: 36px;
     display: flex;
     align-items: center;
+    margin-right: 36px;
+    gap: 10px;
   }
 
   &__email {
     display: flex;
     align-items: center;
     margin-right: 57px;
+    gap: 10px;
   }
 }
 
 .vk {
   margin-right: 15px;
+}
+
+.line {
+  border: 1px solid #EBEBF0;
+
 }

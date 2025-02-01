@@ -68,6 +68,12 @@ body {
   margin: 0 auto;
   max-width: 1440px;
 }
+@media screen and (max-width: 1400px) {
+  .container {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
 
 .title {
   font-family: "Bebas Neue";
@@ -133,15 +139,34 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
 .header-wrapper {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   font-weight: 400;
+  border-bottom: 1px solid rgba(235, 235, 240, 0.2);
 }
 
 .logo {
   padding: 25px 50px;
+  border-right: 1px solid rgba(235, 235, 240, 0.2);
+}
+@media screen and (max-width: 1750px) {
+  .logo {
+    padding: 15px 50px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .logo {
+    padding: 10px 15px;
+    border: none;
+  }
 }
 
 .navigation {
@@ -152,6 +177,11 @@ body {
 }
 .navigation__link:hover {
   color: #5C8EE5;
+}
+@media screen and (max-width: 1400px) {
+  .navigation {
+    display: none;
+  }
 }
 
 .contact {
@@ -172,6 +202,42 @@ body {
   font-size: 16px;
   line-height: 25px;
 }
+@media screen and (max-width: 1400px) {
+  .contact {
+    display: none;
+  }
+}
+
+.burger {
+  display: none;
+}
+@media screen and (max-width: 1400px) {
+  .burger {
+    display: block;
+    width: 80px;
+    height: 68px;
+    padding: 22px 28px;
+    border-right: 1px solid rgba(235, 235, 240, 0.2);
+    cursor: pointer;
+  }
+}
+.burger__buttom {
+  padding: 22px 28px;
+}
+
+.header-button {
+  display: none;
+}
+@media screen and (max-width: 1400px) {
+  .header-button {
+    display: block;
+    cursor: pointer;
+    background-color: #5C8EE5;
+    padding: 22px 28px;
+    width: 80px;
+    height: 68px;
+  }
+}
 
 main {
   background: url("../images/main/main-bg.png"), no-repeat;
@@ -186,7 +252,7 @@ main {
 .main-wrapper__title {
   max-width: 1080px;
   font-weight: 600;
-  font-size: 80px;
+  font-size: clamp(60px, 10vw, 80px);
   font-family: "Bebas Neue";
   line-height: 96px;
   color: #FFFFFF;
@@ -204,17 +270,20 @@ main {
   padding: 25px 60px;
   margin-bottom: 100px;
 }
-.main-wrapper__advantage {
-  display: flex;
+@media screen and (max-width: 425px) {
+  .main-wrapper__btn {
+    max-width: 100%;
+  }
 }
-
 .advantage {
+  height: 25vh;
   padding: 30px 50px;
   border: 0.5px rgba(235, 235, 240, 0.2) solid;
 }
 .advantage__text {
   color: #FFFFFF;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .job {
@@ -443,16 +512,22 @@ main {
   margin-right: 82px;
 }
 .footer-contact__adress {
-  margin-right: 36px;
   display: flex;
   align-items: center;
+  margin-right: 36px;
+  gap: 10px;
 }
 .footer-contact__email {
   display: flex;
   align-items: center;
   margin-right: 57px;
+  gap: 10px;
 }
 
 .vk {
   margin-right: 15px;
+}
+
+.line {
+  border: 1px solid #EBEBF0;
 }/*# sourceMappingURL=style.css.map */

@@ -5,12 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <title>Document</title>
 </head>
-
 <body>
   <header class="header">
     <div class="header-wrapper">
+      <div class="burger">
+        <img src="/images/header/burger.svg" alt="">
+      </div>
       <img class="logo" src="/images/header/logo.svg" alt="">
       <div class="navigation">
         <div class="navigation__link">
@@ -38,6 +43,9 @@
           Получить консультацию
         </button>
       </div>
+      <div class="header-button">
+        <img src="/images/header/phone-white.svg" alt="" class="header-button__phone">
+      </div>
     </div>
   </header>
 
@@ -57,35 +65,51 @@
         Подробнее о компании
       </button>
       <div class="main-wrapper__advantage">
-        <div class="advantage">
-          <img class="" src="/images/main/1.svg" alt="">
-          <p class="advantage__text">
-            Непрерывная работа c 2017 года
-          </p>
-        </div>
-        <div class="advantage">
-          <img class="" src="/images/main/2.svg" alt="">
-          <p class="advantage__text">
-            Вся продукция сертифицирована
-          </p>
-        </div>
-        <div class="advantage">
-          <img class="" src="/images/main/3.svg" alt="">
-          <p class="advantage__text">
-            Контроль качества на всех этапах
-          </p>
-        </div>
-        <div class="advantage">
-          <img class="" src="/images/main/4.svg" alt="">
-          <p class="advantage__text">
-            Возможны поставки по всей России
-          </p>
-        </div>
-        <div class="advantage">
-          <img class="" src="/images/main/5.svg" alt="">
-          <p class="advantage__text">
-            Оперативное производство
-          </p>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="advantage">
+                <img class="" src="/images/main/1.svg" alt="">
+                <p class="advantage__text">
+                  Непрерывная работа c 2017 года
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="advantage">
+                <img class="" src="/images/main/2.svg" alt="">
+                <p class="advantage__text">
+                  Вся продукция сертифицирована
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="advantage">
+                <img class="" src="/images/main/3.svg" alt="">
+                <p class="advantage__text">
+                  Контроль качества <br>на всех этапах
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="advantage">
+                <img class="" src="/images/main/4.svg" alt="">
+                <p class="advantage__text">
+                  Поставки по всей России
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="advantage">
+                <img class="" src="/images/main/5.svg" alt="">
+                <p class="advantage__text">
+                  Оперативное производство
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
     </div>
@@ -389,7 +413,7 @@
         </h2>
         <p class="wrapper-feedback__text text">
           Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время 
-          ответит<br> на все интересующие вопросы и поможем даже в самых сложных случаях!
+          и ответит<br> на все интересующие вас вопросы и поможет даже в самых сложных случаях!
         </p>
         <div class="wrapper-feedback__input">
           <input class="input-text" type="text" placeholder="Имя">
@@ -431,7 +455,9 @@
         <img src="/images/footer/inst.svg" alt="">
       </div>
     </div>
+    <div class="line"></div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
