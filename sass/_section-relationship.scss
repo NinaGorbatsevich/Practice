@@ -4,13 +4,25 @@
   justify-content: center;
   gap: 120px;
 
+  @media  screen and (max-width: 1750px) {
+    flex-wrap: wrap;
+  }
+
+  &__img {
+    @media  screen and (max-width: 1200px) {
+      width: 100vh;
+    }
+  }
 }
 
 .wrapper-relationship {
   display: flex;
   flex-direction: column;
-  max-width: 720px;
-  margin-right: 240px;
+  margin-right: 50px;
+
+  @media  screen and (max-width: 1750px) {
+    padding: 15px 50px;
+  }
 
   &__title {
     margin-bottom: 10px;

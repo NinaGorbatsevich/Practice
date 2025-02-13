@@ -5,6 +5,10 @@
 .wrapper-items {
   display: flex;
   border: 1px solid #EBEBF0;
+
+  @media  screen and (max-width: 1300px) {
+    flex-wrap: wrap;
+  }
 }
 
 .brand-items {

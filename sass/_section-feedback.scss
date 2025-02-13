@@ -4,6 +4,10 @@
   
   &__spray{
     position: absolute;
+
+    @media  screen and (max-width: 1600px) {
+      display: none;
+    }  
   }
 }
 
@@ -15,6 +19,11 @@
 .feedback-container {
   display: flex;
   justify-content: end;
+
+  @media  screen and (max-width: 1600px) {
+    justify-content: center;
+  }
+
 }
 
 .wrapper-feedback {
@@ -33,6 +42,7 @@
   &__input {
     margin-bottom: 30px;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
   }
 

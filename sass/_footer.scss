@@ -1,6 +1,7 @@
 .footer-contact {
   padding: 50px 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-size: 16px;
   font-weight: 400;
@@ -12,6 +13,8 @@
 
   &__phone {
     margin-right: 82px;
+    font-size: 32px;
+    color: #292D33;
   }
 
   &__adress {
@@ -36,4 +39,40 @@
 .line {
   border: 1px solid #EBEBF0;
 
+}
+
+.footer-navigation {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: space-between;
+
+  &__manufacture {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+}
+
+.footer-subtitle {
+  margin-bottom: 30px;
+}
+
+.rights {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+
+  &__politic {
+    display: flex;
+    gap: 60px;
+  }
+
+  &__made-in {
+    display: flex;
+    gap: 20px;
+  }
 }

@@ -79,6 +79,7 @@ body {
   font-family: "Bebas Neue";
   color: #292D33;
   font-size: 60px;
+  font-size: clamp(40px, 10vw, 60px);
   font-weight: 600;
   line-height: 72px;
   margin-bottom: 50px;
@@ -87,14 +88,21 @@ body {
 .subtitle {
   color: #292D33;
   font-family: "Noto Sans";
-  font-size: 28px;
+  font-size: clamp(20px, 2vw, 28px);
   font-weight: 400;
   line-height: 45px;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 700px) {
+  .subtitle {
+    line-height: 26px;
+  }
+}
 
 .text {
   color: #828A99;
+  font-size: clamp(14px, 1vw, 16px);
+  line-height: 25px;
 }
 
 .big-line {
@@ -151,6 +159,7 @@ body {
   justify-content: space-between;
   font-weight: 400;
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
+  color: #FFFFFF;
 }
 
 .logo {
@@ -192,6 +201,7 @@ body {
 }
 .contact__phone {
   padding: 34px 50px 34px 10px;
+  color: #FFFFFF;
 }
 .contact__advice {
   padding: 34px 50px;
@@ -239,9 +249,9 @@ body {
   }
 }
 
-main {
-  background: url("../images/main/main-bg.png"), no-repeat;
-  background-size: cover;
+.main {
+  background-image: url(/images/main/main-bg.png);
+  background-repeat: no-repeat;
 }
 
 .main-wrapper {
@@ -249,14 +259,28 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
+.main-wrapper__big-line {
+  margin: 152px 0 30px 0;
+}
+@media screen and (max-width: 600px) {
+  .main-wrapper__big-line {
+    margin: 50px 0 20px 0;
+  }
+}
 .main-wrapper__title {
   max-width: 1080px;
   font-weight: 600;
-  font-size: clamp(60px, 10vw, 80px);
+  font-size: clamp(48px, 10vw, 80px);
   font-family: "Bebas Neue";
   line-height: 96px;
   color: #FFFFFF;
-  margin: 182px 0 30px 0;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 500px) {
+  .main-wrapper__title {
+    line-height: 58px;
+    margin-top: 50px;
+  }
 }
 .main-wrapper__text {
   max-width: 720px;
@@ -273,13 +297,23 @@ main {
 @media screen and (max-width: 425px) {
   .main-wrapper__btn {
     max-width: 100%;
+    margin-bottom: 50px;
   }
 }
 
 .advantage {
-  height: 25vh;
   padding: 30px 50px;
   border: 0.5px rgba(235, 235, 240, 0.2) solid;
+}
+@media screen and (max-width: 1300px) {
+  .advantage {
+    height: 12vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .advantage {
+    padding: 30px;
+  }
 }
 .advantage__text {
   color: #FFFFFF;
@@ -290,14 +324,15 @@ main {
 .job {
   margin-top: 150px;
 }
+@media screen and (max-width: 600px) {
+  .job {
+    margin-top: 100px;
+  }
+}
 
 .job-container {
   display: flex;
   flex-direction: column;
-}
-.job-container__cards {
-  display: flex;
-  gap: 30px;
 }
 
 .cards-wrapper__number {
@@ -307,6 +342,7 @@ main {
 }
 .cards-wrapper__text {
   margin-bottom: 20px;
+  margin-right: 30px;
 }
 
 .num {
@@ -334,6 +370,11 @@ main {
 .manufacture-wrapper {
   display: flex;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 1440px) {
+  .manufacture-wrapper {
+    justify-content: center;
+  }
 }
 
 .card-wrapper {
@@ -365,6 +406,11 @@ main {
   display: flex;
   border: 1px solid #EBEBF0;
 }
+@media screen and (max-width: 1300px) {
+  .wrapper-items {
+    flex-wrap: wrap;
+  }
+}
 
 .brand-items {
   display: flex;
@@ -379,12 +425,26 @@ main {
   justify-content: center;
   gap: 120px;
 }
+@media screen and (max-width: 1750px) {
+  .relationship {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .relationship__img {
+    width: 100vh;
+  }
+}
 
 .wrapper-relationship {
   display: flex;
   flex-direction: column;
-  max-width: 720px;
-  margin-right: 240px;
+  margin-right: 50px;
+}
+@media screen and (max-width: 1750px) {
+  .wrapper-relationship {
+    padding: 15px 50px;
+  }
 }
 .wrapper-relationship__title {
   margin-bottom: 10px;
@@ -395,6 +455,12 @@ main {
 
 .production {
   margin-top: 150px;
+  display: flex;
+}
+@media screen and (max-width: 1440px) {
+  .production {
+    justify-content: center;
+  }
 }
 
 .production-title {
@@ -429,6 +495,11 @@ main {
 .feedback__spray {
   position: absolute;
 }
+@media screen and (max-width: 1600px) {
+  .feedback__spray {
+    display: none;
+  }
+}
 
 .background-white {
   height: 74px;
@@ -438,6 +509,11 @@ main {
 .feedback-container {
   display: flex;
   justify-content: end;
+}
+@media screen and (max-width: 1600px) {
+  .feedback-container {
+    justify-content: center;
+  }
 }
 
 .wrapper-feedback {
@@ -453,6 +529,7 @@ main {
 .wrapper-feedback__input {
   margin-bottom: 30px;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .wrapper-feedback__button {
@@ -502,6 +579,7 @@ main {
 .footer-contact {
   padding: 50px 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-size: 16px;
   font-weight: 400;
@@ -512,6 +590,8 @@ main {
 }
 .footer-contact__phone {
   margin-right: 82px;
+  font-size: 32px;
+  color: #292D33;
 }
 .footer-contact__adress {
   display: flex;
@@ -532,4 +612,36 @@ main {
 
 .line {
   border: 1px solid #EBEBF0;
+}
+
+.footer-navigation {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+.footer-navigation__manufacture {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer-subtitle {
+  margin-bottom: 30px;
+}
+
+.rights {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.rights__politic {
+  display: flex;
+  gap: 60px;
+}
+.rights__made-in {
+  display: flex;
+  gap: 20px;
 }/*# sourceMappingURL=style.css.map */
