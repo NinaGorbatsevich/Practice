@@ -43,28 +43,55 @@
 
 .footer-navigation {
   display: flex;
-  flex-direction: row;
   margin-top: 50px;
   margin-bottom: 50px;
   justify-content: space-between;
 
+  @media  screen and (max-width: 560px) {
+    flex-direction: column;
+  }
+
   &__manufacture {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    gap: 30px;
   }
 
+  &__manufacture-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__brands{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__brands-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__about {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
-.footer-subtitle {
-  margin-bottom: 30px;
-}
 
 .rights {
   margin-top: 50px;
   margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
+
+  @media  screen and (max-width: 810px) {
+    flex-direction: column;
+  }
 
   &__politic {
     display: flex;
@@ -75,4 +102,8 @@
     display: flex;
     gap: 20px;
   }
+}
+
+.footer-img {
+  min-width: 52px;
 }

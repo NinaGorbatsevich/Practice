@@ -4,13 +4,18 @@
   justify-content: center;
   gap: 120px;
 
-  @media  screen and (max-width: 1750px) {
-    flex-wrap: wrap;
+  @media  screen and (max-width: 1500px) {
+    gap: 30px;
   }
 
   &__img {
-    @media  screen and (max-width: 1200px) {
-      width: 100vh;
+
+    @media  screen and (max-width: 1380px) {
+      width: 660px;
+    }
+
+    @media  screen and (max-width: 1250px) {
+      display: none;
     }
   }
 }
