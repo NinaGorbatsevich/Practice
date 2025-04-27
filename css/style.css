@@ -126,6 +126,10 @@ body {
   color: #5C8EE5;
 }
 
+.bg-wrapper {
+  background-image: url(/images/main/main-bg.png);
+}
+
 @font-face {
   font-family: "Noto Sans";
   src: url("../fonts/NotoSans.eot");
@@ -247,11 +251,6 @@ body {
     width: 80px;
     height: 68px;
   }
-}
-
-.main {
-  background-image: url(/images/main/main-bg.png);
-  background-repeat: no-repeat;
 }
 
 .main-wrapper {
@@ -717,6 +716,13 @@ body {
 
 .black__navigation-link, .black__contact-phone {
   color: #292D33;
+}
+
+.header-about {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
 }
 
 .production-img {

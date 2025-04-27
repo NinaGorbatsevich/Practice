@@ -1,3 +1,10 @@
 .black__navigation-link, .black__contact-phone {
   color: #292D33;
 }
+
+.header-about {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+}
